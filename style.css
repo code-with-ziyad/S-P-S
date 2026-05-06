@@ -1,0 +1,95 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* BACKGROUND */
+body{
+    background: linear-gradient(135deg, #1e1e2f, #3a3a8c);
+    color: white;
+    text-align: center;
+}
+
+/* TITLE */
+.para{
+    background: rgba(0,0,0,0.4);
+    padding: 30px;
+    font-size: 3rem;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+/* CHOICES SECTION */
+.choices{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+/* IMAGE BUTTONS */
+.choices img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT (IMPORTANT FIX) */
+.choices img:hover{
+    transform: scale(1.2) rotate(5deg);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.6);
+}
+
+/* SCORE SECTION */
+.score{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 60px;
+    font-size: 1.8rem;
+}
+
+/* SCORE NUMBERS */
+#you,
+#computer{
+    font-size: 4rem;
+    color: #00ffcc;
+}
+
+/* RESULT BOX */
+#move{
+    margin-top: 40px;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 2rem;
+    background: rgba(0,0,0,0.5);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* RESET BUTTON */
+.reset{
+    margin-top: 40px;
+    width: 200px;
+    height: 60px;
+    font-size: 1.5rem;
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* RESET HOVER */
+.reset:hover{
+    background: #ff1a1a;
+    transform: scale(1.1);
+}
